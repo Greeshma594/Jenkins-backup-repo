@@ -1,0 +1,36 @@
+Started by user [8mha:////4P6QoYBBeQG1mukOB3xUzOAexiOmkIlRRKuMvGHxuDeTAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL99KLU1OKM3EQAMXySqMMAAAA=[0mGreeshma Gokuldas
+Running as SYSTEM
+Building remotely on [8mha:////4HWw9wd2A7B3KCdAKn+GaVqJFGY0BlY23JhL5/3AQrMjAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (c-project) in workspace /home/ec2-user/jenkins/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ec2-user/jenkins/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Greeshma594/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/Greeshma594/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+ > git fetch --tags --force --progress -- https://github.com/Greeshma594/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 041d5d00954e5aea11c28d10e59c5e9b6d2166cf (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 041d5d00954e5aea11c28d10e59c5e9b6d2166cf # timeout=10
+Commit message: "added makefile"
+ > git rev-list --no-walk 041d5d00954e5aea11c28d10e59c5e9b6d2166cf # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins9304430304967405371.sh
++ cd /home/ec2-user/jenkins/workspace/c-project
++ make
+gcc -c main.c
+main.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    1 | main()  {
+      | ^~~~
+main.c: In function ‘main’:
+main.c:2:4: warning: implicit declaration of function ‘biggest’ [-Wimplicit-function-declaration]
+    2 |    biggest();
+      |    ^~~~~~~
+main.c:3:4: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+    3 |    factorial();
+      |    ^~~~~~~~~
+gcc -c big3.c
+gcc -c fact.c
+gcc -o ABC.exe main.o big3.o fact.o
+Finished: SUCCESS

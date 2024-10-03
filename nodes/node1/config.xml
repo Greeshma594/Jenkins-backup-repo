@@ -1,0 +1,28 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>node1</name>
+  <description>node for c-project</description>
+  <remoteFS>/home/ec2-user/jenkins</remoteFS>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@2.973.v0fa_8c0dea_f9f">
+    <host>172.31.33.99</host>
+    <port>22</port>
+    <credentialsId>6d1b789a-f72b-4e62-889c-9ed0f51e41ca</credentialsId>
+    <launchTimeoutSeconds>60</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label>c-project</label>
+  <nodeProperties>
+    <hudson.node__monitors.DiskSpaceMonitorNodeProperty>
+      <freeDiskSpaceThreshold>0</freeDiskSpaceThreshold>
+      <freeTempSpaceThreshold>0</freeTempSpaceThreshold>
+      <freeDiskSpaceWarningThreshold>2GiB</freeDiskSpaceWarningThreshold>
+      <freeTempSpaceWarningThreshold>2GiB</freeTempSpaceWarningThreshold>
+    </hudson.node__monitors.DiskSpaceMonitorNodeProperty>
+  </nodeProperties>
+</slave>
