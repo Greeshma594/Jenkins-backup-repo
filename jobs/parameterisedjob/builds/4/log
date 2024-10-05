@@ -1,0 +1,29 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/jobs/parameterised job/workspace
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Greeshma594/parameterised.git
+ > git init /var/lib/jenkins/jobs/parameterised job/workspace # timeout=10
+Fetching upstream changes from https://github.com/Greeshma594/parameterised.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+ > git fetch --tags --force --progress -- https://github.com/Greeshma594/parameterised.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Greeshma594/parameterised.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 81d1eb46d0cef0057c43fff7ac3da594fb92d2f3 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 81d1eb46d0cef0057c43fff7ac3da594fb92d2f3 # timeout=10
+Commit message: "updated makefile"
+ > git rev-list --no-walk 81d1eb46d0cef0057c43fff7ac3da594fb92d2f3 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/jenkins14633972640104211902.sh
++ cd /var/lib/jenkins/jobs/parameterisedjob/workspace
+/tmp/jenkins14633972640104211902.sh: line 2: cd: /var/lib/jenkins/jobs/parameterisedjob/workspace: No such file or directory
+Build step 'Execute shell' marked build as failure
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: FAILURE

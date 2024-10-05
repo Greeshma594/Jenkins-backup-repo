@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description>This is to deploy the build to tomcat server</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -11,7 +12,7 @@
   <triggers>
     <jenkins.triggers.ReverseBuildTrigger>
       <spec></spec>
-      <upstreamProjects>c-project, </upstreamProjects>
+      <upstreamProjects>c-project,</upstreamProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

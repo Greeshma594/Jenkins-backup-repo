@@ -1,0 +1,29 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building remotely on [8mha:////4E2pmfXLOWn6MYjE75eGTm9uZ/TUwQ0+nL2ZwuKOX7gzAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6eUB3KuSllgMARYmEAccAAAA=[0mnode new (c-project) in workspace /home/ec2-user/workspace/parameterisedjob
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Greeshma594/parameterised.git
+ > git init /home/ec2-user/workspace/parameterisedjob # timeout=10
+Fetching upstream changes from https://github.com/Greeshma594/parameterised.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+ > git fetch --tags --force --progress -- https://github.com/Greeshma594/parameterised.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Greeshma594/parameterised.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 81d1eb46d0cef0057c43fff7ac3da594fb92d2f3 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 81d1eb46d0cef0057c43fff7ac3da594fb92d2f3 # timeout=10
+Commit message: "updated makefile"
+ > git rev-list --no-walk 81d1eb46d0cef0057c43fff7ac3da594fb92d2f3 # timeout=10
+[parameterisedjob] $ /bin/sh -xe /tmp/jenkins10051191161818410291.sh
++ cd /home/ec2-user/workspace/parameterisedjob
++ make
+make: 'RESULT.exe' is up to date.
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: SUCCESS
