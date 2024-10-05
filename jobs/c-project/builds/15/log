@@ -1,0 +1,29 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building remotely on [8mha:////4E2pmfXLOWn6MYjE75eGTm9uZ/TUwQ0+nL2ZwuKOX7gzAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6eUB3KuSllgMARYmEAccAAAA=[0mnode new (c-project) in workspace /home/ec2-user/workspace/c-project
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Greeshma594/c-project.git
+ > git init /home/ec2-user/workspace/c-project # timeout=10
+Fetching upstream changes from https://github.com/Greeshma594/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+ > git fetch --tags --force --progress -- https://github.com/Greeshma594/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Greeshma594/c-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 92e242317ac3ee76e7ac43e9c6c845e1b2d15803 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 92e242317ac3ee76e7ac43e9c6c845e1b2d15803 # timeout=10
+Commit message: "Create test2"
+ > git rev-list --no-walk 033738cfd561434b591e885be12ce036c16fc47f # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins595823177397476729.sh
++ cd /home/ec2-user/jenkins/workspace/c-project
+/tmp/jenkins595823177397476729.sh: line 2: cd: /home/ec2-user/jenkins/workspace/c-project: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

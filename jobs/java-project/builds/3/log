@@ -1,0 +1,30 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building remotely on [8mha:////4E2pmfXLOWn6MYjE75eGTm9uZ/TUwQ0+nL2ZwuKOX7gzAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6eUB3KuSllgMARYmEAccAAAA=[0mnode new (c-project) in workspace /home/ec2-user/workspace/java-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Greeshma594/java-project.git
+ > git init /home/ec2-user/workspace/java-project # timeout=10
+Fetching upstream changes from https://github.com/Greeshma594/java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+ > git fetch --tags --force --progress -- https://github.com/Greeshma594/java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Greeshma594/java-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 29fad78e5d338ea07b3899fae487a7a960ddc8ef (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 29fad78e5d338ea07b3899fae487a7a960ddc8ef # timeout=10
+Commit message: "Delete utils.java"
+ > git rev-list --no-walk 29fad78e5d338ea07b3899fae487a7a960ddc8ef # timeout=10
+[java-project] $ /bin/sh -xe /tmp/jenkins15223429050947326798.sh
++ cd /home/ec2-user/workspace/java-project
++ mvn clean
+/tmp/jenkins15223429050947326798.sh: line 3: mvn: command not found
+Build step 'Execute shell' marked build as failure
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: FAILURE
